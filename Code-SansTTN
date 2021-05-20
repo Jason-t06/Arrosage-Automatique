@@ -1,0 +1,32 @@
+#include <Wire.h>
+
+int sensorpin = 0; // analog pin used to connect the potentiometer
+int solenoidPin = A3;
+
+void setup() {
+    Serial.begin(115200);
+    pinMode(solenoidPin, OUTPUT);
+}
+
+void loop() {
+  int humidity = analogRead(A0);
+  Serial.print("Humidity:");
+  Serial.println(humidity);
+  delay(1000);
+
+  int temperature = analogRead(3.3);
+
+  
+  delay(1000);
+
+  if (humidity > 900){
+      pinMode(solenoidPin, HIGH);
+      delay(1000);
+  }
+  else{
+    pinMode(solenoidPin, LOW);
+    delay(1000);
+    
+  }
+
+}
