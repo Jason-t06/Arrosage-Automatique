@@ -6,5 +6,5 @@ nous avons réalisé un arrosage automatique. Son fonctionnement est le suivant,
 
 Matériel utilisé:
 
-Une carte arduino, une valve sinusoïde, un capteur d'humidité, un relay 5v et une pile 9v.
+Une carte arduino, une valve solénoïde, un capteur d'humidité, un relay 5v et une pile 9v.
 
